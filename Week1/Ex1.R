@@ -42,8 +42,7 @@ with(ques3_data, cor(stretch, distance))
 ## Ex4:	Create a list with given elements inside:
 
 l <- list(dimension = dim(ques3_data), variable_names = names(ques3_data), 
-          gender = summary(ques3_data$sex), stretch_mean = mean(ques3_data$stretch), 
-          distance_mean = mean(ques3_data$distance))
+          gender = summary(ques3_data$sex), means = sapply(data[,1:2], mean))
 l
 
 
